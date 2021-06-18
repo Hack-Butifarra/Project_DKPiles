@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DKPiles</title>
+    <link rel="stylesheet" type="text/css" href="css/commons.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo_contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilo_icons.css" />
+    <link rel="icon" type="image/png" href="icons/logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="logo" src="icons/logo.png" alt="Logo">
+            <button class="nav-hamburgesa" aria-label="Abrir menú"><i class="icon icon-menu"></i></button>
+            <ul class="nav-menu-phone">
+              <li class="nav-menu-item"><a href="home.html" class="nav-menu-link nav-link">Inicio</a></li>
+              <li class="nav-menu-item"><a href="club.html" class="nav-menu-link nav-link">Club</a></li>
+              <li class="nav-menu-item"><a href="gallery.html" class="nav-menu-link nav-link">Fotos</a></li>
+              <li class="nav-menu-item"><a href="contact.html" class="nav-menu-link nav-link">Contacto</a></li>
+            </ul>
+
+            <ul class="nav-menu-pc">
+                <li class="nav-menu-item"><a href="home.html" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-item"><a href="club.html" class="nav-menu-link nav-link">Club</a></li>
+                <li class="nav-menu-item"><a href="gallery.html" class="nav-menu-link nav-link">Fotos</a></li>
+                <li class="nav-menu-item"><a href="contact.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <h4>Formulario de Contacto</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre *" required>
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su email *" required>
+            <textarea class="controls" name="mensaje" placeholder="Escribenos tus dudas *" cols="40" rows="5" required></textarea>
+            <input class="botons" type="submit" value="Enviar">
+          </form>
+    </main>
+
+    <aside id="social">
+        <a href="https://es-es.facebook.com/DunesKitePiles-285379918186780/" class="icon icon-facebook" target="_blank"></a>
+        <a href="https://twitter.com/windgurucz?lang=es" class="icon icon-twitter" target="_blank"></a>
+        <a href="https://www.instagram.com/accounts/login/" class="icon icon-instagram" target="_blank"></a>
+        <a href="https://www.google.com/intl/es/gmail/about/" class="icon icon-envelop" target="_blank"></a>
+    </aside>
+
+    <footer>
+        <!-- Footer main -->
+        <section class="ft-main">
+            <div class="ft-main-item">
+            <h2 class="ft-title">Nosotros</h2>
+            <ul>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+            </div>
+            <div class="ft-main-item">
+            <h2 class="ft-title">Contacto</h2>
+            <ul>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+            </div>
+        </section>
+        
+        <!-- Footer social -->
+        <section class="ft-social">
+            <ul class="ft-social-list">
+                <li><a href="https://es-es.facebook.com/DunesKitePiles-285379918186780/" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                <li><a href="https://twitter.com/windgurucz?lang=es" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="icon icon-instagram"></i></a></li>
+                <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><i class="icon icon-envelop"></i></a></li>
+            </ul>
+        </section>
+        
+        <!-- Footer legal -->
+        <section class="ft-legal">
+            <ul class="ft-legal-list">
+                <li><a href="#">Terminos &amp; Condiciones</a></li>
+                <li>|</li>
+                <li><a href="#">Politica de Privacidad</a></li>
+                <li>&copy; 2021 Copyright DKPiles Inc.</li>
+            </ul>
+        </section>   
+    </footer>
+
+    <aside id="cookies">
+        <p>
+            Utilizamos cookies para ofrecerte la mejor experiencia en nuestra web.<br />Puedes aprender más sobre qué cookies 
+            utilizamos en los avisos legales o desactivarlas en los ajustes.
+        </p>
+        <p>
+            <input class='btn-ok' type="button" value="Aceptar"/>
+            <input class='btn-reject' type="button" value="Rechazar"/>
+        </p>  
+    </aside>
+
+    <script src="js/home.js"></script>
+</body>
+</html>

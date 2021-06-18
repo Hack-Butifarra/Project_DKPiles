@@ -1,0 +1,102 @@
+body {    
+    background-image: url('../background/fondo_3.jpg'); 
+}
+
+aside#title h1 {
+    margin-top: 120px;
+    font-family: "Malaka Brush";
+    font-size: 5em;
+    color: #034d53;
+    text-align: center;
+}
+
+aside#title h2 {
+    margin: 0 50px;
+    margin-top: 5px;
+    font-family: "Simplicity";
+    font-size: 2em;
+    text-align: center;
+}
+  
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+main .slider {
+    position: relative;
+    width: 800px;
+    min-height: 500px;
+    margin: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+  
+main .slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+  
+main .slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+}
+  
+main .slider .slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+main .navigation {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+  
+main .slider:hover .navigation {
+    opacity: 1;
+}
+  
+main .prev-btn, main .next-btn {
+    z-index: 999;
+    font-size: 2em;
+    color: #222;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    cursor: pointer;
+}
+  
+main .prev-btn {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+  
+main .next-btn {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+
+@media (min-width: 768px) {
+    aside#title h1 {
+        margin-left: 50px;
+        font-family: "Malaka Brush";
+        text-align: left;
+    }
+    
+    aside#title h2 {
+        margin-left: 50px;
+        margin-top: 0;
+        font-size: 1.8em;
+        text-align: left;
+    }
+}
